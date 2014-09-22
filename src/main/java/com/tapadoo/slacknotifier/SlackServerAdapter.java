@@ -205,9 +205,9 @@ public class SlackServerAdapter extends BuildServerAdapter {
 
             JsonObject payloadObj = new JsonObject();
             payloadObj.addProperty("channel" , channel);
-            payloadObj.addProperty("username" , "TeamCity");
+            // payloadObj.addProperty("username" , "TeamCity");
             payloadObj.addProperty("text", message);
-            payloadObj.addProperty("icon_url",slackConfig.getLogoUrl());
+            // payloadObj.addProperty("icon_url",slackConfig.getLogoUrl());
 
             if( commitMsg.length() > 0 )
             {
